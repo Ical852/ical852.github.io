@@ -1,0 +1,308 @@
+html{
+	position: relative;
+}
+
+body {
+	margin-bottom: 50px;
+}
+
+.jumbotron {
+	height: 550px;
+	background-image: url('../img/experience/7.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: -100 0px;
+	color: black;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+	font-weight: bold;
+	text-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+}
+
+.jumbotron img {
+	width: 200px;
+	border: 5px solid #454545;
+	margin-top: 70px;
+}
+
+.jumb1 {
+	opacity: 0;
+	transform: translate(0,-50px);
+	transition: 1s;
+}
+
+.jumb1.jumb1Appear {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.btn{
+	font-weight: bold;
+	background-color: black;
+	box-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.center1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.center2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 50px;
+}
+
+.center3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.sosmed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	height: 70%
+}
+
+.about hr {
+	border-top: 3px solid white;
+}
+
+.portfolio hr {
+	border-top: 3px solid black;
+}
+
+.portfolio {
+	background-color: white;
+}
+
+.skills hr {
+	border-top: 3px solid black;
+}
+
+.skills {
+	background-color: white;
+}
+
+.experience hr {
+	border-top: 3px solid white;
+}
+
+.experience {
+	margin-top: 40px;
+}
+
+.achievements hr {
+	border-top: 3px solid white;
+}
+
+.achievements {
+	margin-top: 40px;
+}
+
+.contact {
+	background-color: white;
+}
+
+.contact hr {
+	border-top: 3px solid black;
+}
+
+section.about {
+	min-height: 600px;
+}
+
+section.portfolio {
+	min-height: 700px;
+}
+
+section.experience {
+	min-height: 2500px;
+}
+
+section.skills {
+	min-height: 700px;
+}
+
+section.contact {
+	min-height: 250px;
+}
+
+section.achievements {
+	min-height: 1100px;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+nav {
+	background: #1E1F20;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+label.logo a {
+	font-size: 30px;
+	line-height: 60px;
+	padding: 0 50px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 70px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+nav ul li a.active,nav ul li a:hover{
+	background: #1E1F20;
+	transition: .5s;
+}
+
+nav.nav ul li a{
+	text-decoration: none;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	cursor:pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 1100px){
+	label.logo {
+		font-size: 30px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1100px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 50%;
+		height: 100%;
+		top: 60px;
+		left: -100%;
+		padding: 0 45px;
+		text-align: left;
+		transition: all .5s;
+		background: #1E1F20;
+	}
+	nav ul li{
+		display: block;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	nav ul li a:hover,nav ul li a.active{
+		background: none;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #1E1F20;
+}
+
+.img_container { 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+.img_container i {
+	padding: 10px;
+}
+
+div.img_container a  {
+	text-decoration: none;
+}
+
+
+div h4 {
+	margin-top: 15px;
+}
+
+div h2.portfolio{
+	margin-top: 50px;
+}
+
+div h2.contact{
+	margin-top: 20px;
+}
+
+div h2.skills{
+	margin-top: 50px;
+}
+
+.experience div p {
+	text-align: justify;
+}
+
+.about div p {
+	text-align: justify;
+}
+
+.achievements div p {
+	text-align: justify;
+}
+

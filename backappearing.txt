@@ -1,0 +1,74 @@
+.center{
+	opacity: 0;
+	transform: translate(-50px,0);
+	transition: 1.7s;
+}
+
+.aboutKanan {
+	opacity: 0;
+	transform: translate(50px,0);
+	transition: 1.7s;
+}
+
+.center.centerAppear, .aboutKanan.aboutKananAppear{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.center.centerLost{
+	opacity: 0;
+	transform: translate(-50px,0);
+	transition: 1.7s;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -50px);
+	transition: 0.7s;
+}
+
+.portfolio .thumbnail.appear{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+//portfolio appear
+
+	if (wScroll > $('.portfolio').offset().top - 400) {
+		$('.portfolio .thumbnail').each(function(i){
+			setTimeout(function(){
+				$('.portfolio .thumbnail').eq(i).addClass('appear');
+			}, 200 * i);
+		});
+
+	}
+
+	//about appear
+
+	if (wScroll > $('.about').offset().top - 400) {
+		$('.about .center').each(function(i){
+			setTimeout(function(){
+				$('.about .center').eq(i).addClass('centerAppear');
+			}, 200 * i);
+		});
+
+	}
+
+	if (wScroll > $('.about').offset().top - 400) {
+		$('.about .aboutKanan').each(function(i){
+			setTimeout(function(){
+				$('.about .aboutKanan').eq(i).addClass('aboutKananAppear');
+			}, 200 * i);
+		});
+
+	}
+
+
+
+
+
+
+
+
+	
