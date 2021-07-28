@@ -266,7 +266,7 @@ button:active {
     width: 100px;
     margin: -20px -50px;
     position:relative;
-    top: 5%;
+    top: auto;
     left:50%;
     height: 30px;
     color: #ffffff;
@@ -646,6 +646,7 @@ footer p:nth-child(4) {
         align-items: center;
         z-index: 1;
         transform: translateX(-100%);
+        padding: 0;
     }
 
     nav.open ul {
