@@ -10,7 +10,7 @@
     <title>Data Science</title>
 </head>
 <body>
-        <nav>
+        <nav class="navbar">
             <a href="#data" class="logo page-scroll">Portfolio</a>
             <ul>
                 <li><a href="index.html" class="page-scroll">Home</a></li>
@@ -21,6 +21,10 @@
             </ul>
             <div class="fa fa-bars" id="bars"></div>
         </nav>
+
+        <div class="nav-control" id="nav-control">
+          <i class="fa fa-chevron-up" id="icon-nav"></i>
+        </div>
 
     <div class="data" id="data">
 
@@ -203,6 +207,18 @@
           $('.upslide').addClass('hidden');
           $('.upslide').removeClass('no-hidden');
         }
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.nav-control').click(function () {
+          $('.navbar').toggleClass('hide');
+          $('.nav-control').toggleClass('change');
+          $('.navbar').addClass('controlled');
+          $('.nav-control').addClass('controlled');
+          $('#icon-nav').toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+        });
       });
     </script>
 
