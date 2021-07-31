@@ -43,7 +43,7 @@ $(window).scroll(function(){
             }
         } else if ($(window).width() < 1000  
                     && $(window).width() > 750 ) {
-            if (y > 1050) {
+            if (y > 1000) {
             $('#about').removeClass('yes');
             } else {
                 $('#about').addClass('yes');
@@ -59,13 +59,13 @@ $(window).scroll(function(){
     });
 });
 
-$(window).scroll(function(){
-	$(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 500 && y < 1150) {
-            $('.portfolio-text').addClass('yes');
-        } else {
-            $('.portfolio-text').removeClass('yes');
-        }
-    });
-});
+// $(window).scroll(function(){
+// 	$(document).scroll(function () {
+//         var y = $(this).scrollTop();
+//         if (y > 500 && y < 1150) {
+//             $('.portfolio-text').addClass('yes');
+//         } else {
+//             $('.portfolio-text').removeClass('yes');
+//         }
+//     });
+// });

@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 <body>
@@ -67,7 +68,7 @@
 
         <div class="box-container">
 
-            <div class="box-1">
+            <div class="box-1" >
                 <p class="heading">Android</p>
                 <p class="details">There are some android projects that i have been finished. Click read more button to check it.</p>
                 <a href="android.html"><button>Read More</button></a>
@@ -79,7 +80,7 @@
                 <a href="website.html"><button>Read More</button></a>
             </div>
 
-            <div class="box-3">
+            <div class="box-3" >
                 <p class="heading">Data Science</p>
                 <p class="details">There are some data science research that i have been finished. Click read more button to check it.</p>
                 <a href="data.html"><button>Read More</button></a>
@@ -186,7 +187,7 @@
 
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
       $('.fa-bars').click(function(){
@@ -237,6 +238,11 @@
           $('#icon-nav').toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
         });
       });
+    </script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
 </body>
