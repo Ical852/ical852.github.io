@@ -131,6 +131,7 @@ nav ul li a {
     transform: translate(-13%, -42%);
     opacity: 0;
     transform: translateX(-50%);
+    transition: 1s;
 }
 
 .text-container.yes {
