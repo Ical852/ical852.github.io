@@ -129,19 +129,19 @@ nav ul li a {
     left: 13%;
     top: 42%;
     transform: translate(-13%, -42%);
-    opacity: 0;
+    /* opacity: 0;
     transform: translateX(-50%);
-    transition: 1s;
+    transition: 1s; */
 }
 
-.text-container.yes {
+/* .text-container.yes {
     position: absolute;
     left: 13%;
     top: 42%;
     transform: translate(-13%, -42%);
     opacity: 1;
     transition: 1s;
-}
+} */
 
 .text-container button {
     width: 130px;
@@ -169,12 +169,12 @@ button:active {
     position: absolute;
     bottom: 100px;
     left: 70%;
-    opacity: 0;
-    transform: translateX(-30%);
-    transition: 1s;
+    /* opacity: 0; */
+    transform: translateX(-70%);
+    /* transition: 1s; */
 }
 
-.model.yes {
+/* .model.yes {
     height: 560px;
     position: absolute;
     bottom: 100px;
@@ -182,7 +182,7 @@ button:active {
     transform: translateX(-70%);
     opacity: 1;
     transition: 1s;
-}
+} */
 
 .about-container {
     width: 80%;
@@ -195,12 +195,12 @@ button:active {
     position: relative;
     justify-content: space-evenly;
     align-items: center;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%);
     opacity: 0;
-    transition: 1s;
+    transition: 1s; */
 }
 
-.about-container.yes {
+/* .about-container.yes {
     width: 80%;
     height: 330px;
     background-color: #ffffff;
@@ -214,7 +214,7 @@ button:active {
     transform: translateX(0%);
     opacity: 1;
     transition: 1s;
-}
+} */
 
 .about-container img {
     height: 300px;
@@ -584,12 +584,12 @@ footer p:nth-child(4) {
         position: absolute;
         bottom: 70px;
         left: 80%;
-        transform: translateX(-55%);
-        transition: 1s;
-        opacity: 0;
+        transform: translateX(-80%);
+        /* transition: 1s;
+        opacity: 0; */
     }
 
-    .model.yes {
+    /* .model.yes {
         height: 560px;
         position: absolute;
         bottom: 70px;
@@ -597,7 +597,7 @@ footer p:nth-child(4) {
         transform: translateX(-80%);
         transition: 1s;
         opacity: 1;
-    }
+    } */
 }
 
 @media(max-width:1150px) {
@@ -619,17 +619,17 @@ footer p:nth-child(4) {
         height: 520px;
         left: 85%;
         bottom: 50px;
-        transform: translateX(-70%);
-        opacity: 0;
-        transition: 1s;
+        transform: translateX(-85%);
+        /* opacity: 0;
+        transition: 1s; */
     }
 
-    .model.yes {
+    /* .model.yes {
         height: 520px;
         left: 85%;
         bottom: 50px;
         transform: translateX(-85%);
-    }
+    } */
 
     .text-container {
         top: 46%;
@@ -642,18 +642,18 @@ footer p:nth-child(4) {
     .about-container {
         width: 90%;
         border-radius: 10px;
-        transform: translateY(-50%);
+        /* transform: translateY(-50%);
         opacity: 0;
-        transition: 1s;
+        transition: 1s; */
     }
 
-    .about-container.yes {
+    /* .about-container.yes {
         width: 90%;
         border-radius: 10px;
         transform: translateY(0%);
         opacity: 1;
         transition: 1s;
-    }
+    } */
 
     .about-container img {
         height: 250px;
@@ -736,20 +736,21 @@ footer p:nth-child(4) {
     .text-container {
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
         width: 80%;
-        transition: 1s;
+        /* transition: 1s;
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-100%); */
     }
 
-    .text-container.yes {
+    /* .text-container.yes {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
         transition: 1s;
         opacity: 1;
-    }
+    } */
     
     nav ul {
         margin: 0px;
@@ -818,12 +819,12 @@ footer p:nth-child(4) {
         height: auto;
         padding: 30px 0px;
         align-items: center;
-        transform: translateY(-50%);
+        /* transform: translateY(-50%);
         opacity: 0;
-        transition: 1s;
+        transition: 1s; */
     }
 
-    .about-container.yes {
+    /* .about-container.yes {
         top: 0px;
         flex-direction: column;
         width: 90%;
@@ -833,7 +834,7 @@ footer p:nth-child(4) {
         transform: translateY(0%);
         opacity: 1;
         transition: 1s;
-    }
+    } */
 
     .about-text {
         text-align: center;
