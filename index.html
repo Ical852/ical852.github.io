@@ -46,7 +46,7 @@
 
     <div id="scrollabout">
 
-    <div class="about-container" id="about" data-aos="fade-up" data-aos-duration="1000" >
+    <div class="about-container" id="about" data-aos="fade-up" data-aos-duration="1000">
 
         <img src="img/ical2rbg.png">
 
@@ -138,6 +138,10 @@
               <i style="color: white" class="fab fa-line " > Line</i>
             </a>
 
+            <a href="mailto:shalahuddinahmad.aziz@gmail.com" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+              <i style="color: white" class="fab fa-google"> Gmail</i>
+            </a>
+
         </div>
     </div>
 
@@ -193,6 +197,17 @@
       </a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script>
+      gsap.from('#model', { duration: 1.5, x: -800, opacity: 0 });
+      gsap.from('#identity', { duration: 1.5, y: -500, opacity: 0 });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <!-- <script type="text/javascript" src="js/script.js"></script> -->
@@ -246,11 +261,6 @@
           $('#icon-nav').toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
         });
       });
-    </script>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
     </script>
 
 </body>
