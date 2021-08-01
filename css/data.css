@@ -5,6 +5,17 @@ body {
     padding: 0px;
 }
 
+.data-text button {
+    width: 120px;
+    height: 40px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-family: calibri;
+    border-radius: 10px;
+    background-color: #262525;
+}
+
 .nav-control {
     position: fixed;
     width: 40px;
