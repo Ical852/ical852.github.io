@@ -190,7 +190,9 @@ button:active {
     font-size: 13px;
     font-family: calibri;
     font-weight: bold;
-    line-height: 5px;
+    line-height: normal;
+    margin-bottom: -5px;
+    margin-top: -5px;
 }
 
 .about-text p:nth-child(3),
