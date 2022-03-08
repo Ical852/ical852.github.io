@@ -459,6 +459,8 @@ footer p:nth-child(2) {
     color: #7e7d7d;
     font-size: 16px;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 footer p:nth-child(4) {
@@ -592,6 +594,9 @@ footer p:nth-child(4) {
 
 @media(max-width:1150px) {
     .portfolio {
+        padding: 2% 3% 0px 3%;
+    }
+    .skills {
         padding: 2% 3% 0px 3%;
     }
 }

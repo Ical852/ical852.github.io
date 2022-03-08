@@ -462,6 +462,8 @@ footer p:nth-child(2) {
     color: #7e7d7d;
     font-size: 16px;
     text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 footer p:nth-child(4) {
