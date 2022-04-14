@@ -363,6 +363,12 @@ button:active {
     margin-bottom: 50px;
 }
 
+.skills.tools {
+    background-color: #ffffff;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
 .skills-text p:nth-child(1) {
     font-family: calibri;
     font-weight: bold;
