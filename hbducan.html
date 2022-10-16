@@ -168,6 +168,11 @@
             window.location.href = 'http://ical852.github.io/getaccess.html'
         } else {
             validAccessKey = atob(accessKey)
+            if (validAccessKey !== 'ucancumapunyanyaicanajaokegatu') {
+                alert('Access Key Salah')
+                window.location.href = 'http://ical852.github.io/getaccess.html'
+            }
+            alert('hihi congratulationsss !!!')
         }
 
         $('#btnucanjoget').click(function() {
