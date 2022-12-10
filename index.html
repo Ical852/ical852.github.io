@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ads.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
@@ -312,6 +313,64 @@
       window.addEventListener("resize", () => {
         console.log(window.innerWidth)
       })
+    </script>
+
+    <div id="myModal" class="modal fade text-center">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" id="closf" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h4 class="modal-title">Info Icodegp's Profile</h4>
+            <div style="width: 100%; text-align: center;">
+              <button class="btn-aja noning" id="btn-dont-show">Dont't Show Again ?</button>
+            </div>
+          </div>
+          <div class="modal-body">
+              <div style="width: 100%; text-align: center;">
+                <img src="img/icodegp.jpg" alt="" srcset="" style="width: 100px; height: 100px; border-radius: 50px; margin: auto;">
+              </div>
+              <div class="about-text" style="width: 100%; text-align: center;">
+                <p>Icodegp</p>
+                <p>My other programming portfolio</p>
+                <p>Do you like to see how mobile aplication is created using flutter or react native? or do you like to see application slicing video from figma design to apps ?
+                  you can see that in my Icodegp's instagram account <a target="_blank" href="https://www.instagram.com/icodegp/">here</a>.
+                </p>
+                <p>I like to create mobile application slicing design to apps video on that account, if you like to see the result of the slicing video and integrated apps with backend services,
+                   you can follow Icodegp on instagram. Don't forget to like, comment and share for people who maybe like to see content video like that. Click or tap the button below to see my Icodegp's profile.
+                </p>
+                <a target="_blank" href="https://www.instagram.com/icodegp/" class="page-scroll"><button>Icodegp Profile</button></a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let adds = true;
+      let count = 0;
+      const btnDontShow = document.getElementById('btn-dont-show')
+      btnDontShow.addEventListener("click", () => {
+        document.querySelector('.modal').classList.toggle('open');
+        adds = false;
+      })
+
+      setTimeout(() => {
+        document.querySelector('.modal').classList.add('open');
+      }, 10000);
+      setInterval(() => {
+        if (adds) {
+          if (count >= 3) {
+            btnDontShow.classList.remove('noning')
+          }
+          document.querySelector('.modal').classList.add('open');
+        }
+      }, 30000);
+
+      document.getElementById('closf').onclick = function() {  
+        document.querySelector('.modal').classList.toggle('open');
+        count += 1;
+      }
     </script>
 
 </body>
