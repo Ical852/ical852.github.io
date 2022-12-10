@@ -34,9 +34,6 @@
     transition: all ease 0.5s;
 }
 
- .hidden {
-    display: none;
-}
 .open {
     display: block!important;
 }
