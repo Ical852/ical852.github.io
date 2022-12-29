@@ -34,11 +34,8 @@
     transition: all ease 0.5s;
 }
 
- .hidden {
-    display: none;
-}
 .open {
-    display: block!important;
+  display: block!important;
 }
 .modal-open {
   overflow: hidden;
@@ -150,9 +147,6 @@ button.close {
 [role="button"] {
   cursor: pointer;
 }
-.hide {
-  display: none !important;
-}
 .show {
   display: block !important;
 }
@@ -165,9 +159,6 @@ button.close {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-}
-.hidden {
-  display: none !important;
 }
 .affix {
   position: fixed;
