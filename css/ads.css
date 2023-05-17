@@ -34,7 +34,7 @@
     transition: all ease 0.5s;
 }
 
-.open {
+.opened {
   display: block!important;
 }
 .modal-open {

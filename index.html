@@ -122,6 +122,7 @@
         <img src="img/skills-ori/c.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">
         <img src="img/skills-ori/ts.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
         <img src="img/skills-ori/ruby.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+        <img src="img/skills-ori/swift.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">
       </div>
 
       <p class="quote" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">There are still more programming language that i need to learn to expand my experience about programming.</p>
@@ -153,17 +154,19 @@
         <img src="img/tools-ori/android studio.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
         <img src="img/tools-ori/rnative.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">
         <img src="img/tools-ori/flutter.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1700">
-        <img src="img/tools-ori/kodular.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800">
-        <img src="img/tools-ori/pma.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1900">
-        <img src="img/tools-ori/mysqlwb.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
-        <img src="img/tools-ori/sqlite.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2100">
-        <img src="img/tools-ori/mongodb.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2200">
-        <img src="img/tools-ori/mongoose.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2300">
-        <img src="img/tools-ori/firebase.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2400">
-        <img src="img/tools-ori/airtable.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2500">
-        <img src="img/tools-ori/gs.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2600">
-        <img src="img/tools-ori/canva.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2700">
-        <img src="img/tools-ori/figma.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2800">
+        <img src="img/tools-ori/swiftui.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800">
+        <img src="img/tools-ori/xcode.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1900">
+        <img src="img/tools-ori/kodular.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+        <img src="img/tools-ori/pma.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2100">
+        <img src="img/tools-ori/mysqlwb.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2200">
+        <img src="img/tools-ori/sqlite.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2300">
+        <img src="img/tools-ori/mongodb.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2400">
+        <img src="img/tools-ori/mongoose.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2500">
+        <img src="img/tools-ori/firebase.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2600">
+        <img src="img/tools-ori/airtable.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2700">
+        <img src="img/tools-ori/gs.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2800">
+        <img src="img/tools-ori/canva.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2900">
+        <img src="img/tools-ori/figma.png" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
       </div>
 
       <p class="quote" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">There are still more frameworks and tools that i need to learn to expand my experience about programming.</p>
@@ -351,24 +354,24 @@
       let count = 0;
       const btnDontShow = document.getElementById('btn-dont-show')
       btnDontShow.addEventListener("click", () => {
-        document.querySelector('.modal').classList.toggle('open');
+        document.querySelector('.modal').classList.toggle('opened');
         adds = false;
       })
 
       setTimeout(() => {
-        document.querySelector('.modal').classList.add('open');
+        document.querySelector('.modal').classList.add('opened');
       }, 10000);
       setInterval(() => {
         if (adds) {
           if (count >= 3) {
             btnDontShow.classList.remove('noning')
           }
-          document.querySelector('.modal').classList.add('open');
+          document.querySelector('.modal').classList.add('opened');
         }
       }, 30000);
 
       document.getElementById('closf').onclick = function() {  
-        document.querySelector('.modal').classList.toggle('open');
+        document.querySelector('.modal').classList.toggle('opened');
         count += 1;
       }
     </script>
