@@ -402,7 +402,8 @@ button:active {
     font-weight: bold;
     color: #3e3d3d;
     font-size: 24px;
-    line-height: 0px;
+    line-height: normal;
+    margin-block-end: 0px;
 }
 
 .exp-box p:nth-child(2) {
@@ -410,7 +411,8 @@ button:active {
     font-weight: bold;
     color: #3e3d3d;
     font-size: 15px;
-    line-height: 5px;
+    line-height: normal;
+    margin-block-end: 0px;
 }
 
 .exp-box p:nth-child(n+3) {
